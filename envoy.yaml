@@ -1,3 +1,6 @@
+node:
+  id: _NODE_ID_
+  cluster: _NODE_CLUSTER_
 dynamic_resources:
   ads_config:
     api_type: GRPC
@@ -11,7 +14,7 @@ static_resources:
     type: STATIC
     lb_policy: ROUND_ROBIN
     http2_protocol_options: {}
-    hosts: [{ socket_address: { address: 172.17.8.101, port_value: 18000 }}]
+    hosts: [{ socket_address: { address: _XDS_HOST_, port_value: _XDS_PORT_ }}]
 admin:
   access_log_path: "/dev/null"
   address:
