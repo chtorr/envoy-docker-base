@@ -8,4 +8,4 @@ sed -i "s/_XDS_HOST_/${XDS_HOST}/" /etc/envoy.yaml
 sed -i "s/_XDS_PORT_/${XDS_PORT}/" /etc/envoy.yaml
 
  /app & # TODO: exit if app fails to start
- envoy -c /etc/envoy.yaml
+ envoy -c /etc/envoy.yaml --drain-time-s 90
