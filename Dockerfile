@@ -1,4 +1,4 @@
-FROM envoyproxy/envoy-alpine:v1.6.0
+FROM envoyproxy/envoy-alpine:v1.7.1
 
 RUN apk add --no-cache tini bash
 ADD start.sh /
