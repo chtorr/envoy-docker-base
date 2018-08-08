@@ -1,4 +1,5 @@
-FROM envoyproxy/envoy-alpine:v1.6.0
+# a614808b9aab7cfd94d66a307a8b65c6c7890097 == 1.7.1
+FROM envoyproxy/envoy-alpine:a614808b9aab7cfd94d66a307a8b65c6c7890097
 
 RUN apk add --no-cache tini bash
 ADD start.sh /
